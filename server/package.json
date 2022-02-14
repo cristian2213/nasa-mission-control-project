@@ -18,6 +18,7 @@
     "cors": "^2.8.5",
     "csv-parse": "^5.0.4",
     "express": "^4.17.2",
-    "full-stack-nasa-project": "file:.."
+    "full-stack-nasa-project": "file:..",
+    "morgan": "^1.10.0"
   }
 }
