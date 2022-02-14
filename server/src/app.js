@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const morgan = require('morgan');
 
 const planetsRouter = require('./routes/planets/planets.router');
 const corsOptions = {
@@ -20,6 +21,9 @@ const corsOptions = {
 const app = express();
 
 app.use(cors(corsOptions));
+
+app.use(morgan('combined')); // # MIDDLEWARE - To add route logs
+
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'public'))); // # REACT APP - Now Express is serving the app
 app.use(planetsRouter);
