@@ -13,6 +13,7 @@ const sounds = {
   },
   players: {
     click: {
+      // # PATH TO THE PUBLIC FOLDER
       sound: { src: ["/sound/click.mp3"] },
       settings: { oneAtATime: true }
     },
