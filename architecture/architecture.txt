@@ -1,0 +1,5 @@
+- ARCHITECTURE:
+    - Separation of concerns => https://en.wikipedia.org/wiki/Separation_of_concerns
+    - Separation of Concerns in Software Design => https://nalexn.github.io/separation-of-concerns/
+    - Layered Architecture to Design iOS Apps => https://www.vadimbulavin.com/layered-architecture-ios/
+    
