@@ -8,21 +8,29 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "watch": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "cluster": "pm2 start src/server.js -i max"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {
     "jest": "^27.5.1",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "cors": "^2.8.5",
     "csv-parse": "^5.0.4",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "full-stack-nasa-project": "file:..",
-    "morgan": "^1.10.0"
+    "mongoose": "^6.2.2",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.0"
   }
 }
