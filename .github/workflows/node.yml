@@ -23,6 +23,5 @@ jobs:
       # MY COMMANDS
       - run: npm install
       - run: npm run build --prexis client
-
   # deploy:
   #   needs: build
