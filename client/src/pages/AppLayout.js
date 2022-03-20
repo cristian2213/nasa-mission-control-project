@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Frame, withSounds, withStyles } from 'arwes';
 
-import usePlanets from '../hooks/usePlanets';
-import useLaunches from '../hooks/useLaunches';
+import usePlanets from './hooks/usePlanets';
+import useLaunches from './hooks/useLaunches';
 
 import Centered from '../components/Centered';
 import Header from '../components/Header';
