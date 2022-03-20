@@ -13,9 +13,11 @@ jobs:
   build:
     env:
       CI: true
+      MONGO_URL: mongodb://localhost/nasa-db
     strategy:
       matrix:
         node-version: [14.x, 16.x]
+        mongodb-version: ['4.4']
     #
     runs-on: ubuntu-latest
     #
@@ -26,6 +28,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       # MY COMMANDS
+      - name: MongoDB in GitHub Actions
+        uses: supercharge/mongodb-github-action@1.7.0
+        with:
+          mongodb-version: ${{ matrix.mongodb-version }}
       - run: npm install
       - run: npm run build --prexis client
       - run: npm test
